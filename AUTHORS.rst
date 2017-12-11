@@ -1,7 +1,7 @@
 Authors
 -------
 
-* Claudio Navaroo
+* Claudio Navarro
 * Jeremías Mora 
 
 

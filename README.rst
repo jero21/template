@@ -1,3 +1,3 @@
-Documentación Rquitectural Proyecto Semestral
+Documentación Arquitectural Proyecto Semestral
 ========
 
