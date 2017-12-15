@@ -1,5 +1,5 @@
 ========
-Vision & Objetives & Areas
+Diseño
 ========
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
