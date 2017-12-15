@@ -3,11 +3,11 @@ Area de Historias de Usuario
 ========
 
 +-------------+-------------------+---------------+
-| Cómo        | Quiero            | De modo que   |
+| Como        | quiero            | de modo que   |
 +=============+===================+===============+
-| ........    | column 2          | column 3      |
+| profesor encargado de tesistas    | column 2          | column 3      |
 +-------------+-------------------+---------------+
-| body row 2  | ...               | ...           |
+| alumno tesista  | ...               | ...           |
 +-------------+-------------------+---------------+
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
