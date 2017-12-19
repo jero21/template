@@ -14,10 +14,10 @@ Area de Historias de Usuario
 |                      | alumnos tesistas en la    | y sus distintas versiones.|
 |                      | plataforma                |                           |
 +----------------------+---------------------------+---------------------------+
-| profesor encargado de| que la plataforma automa- | pueda ver de forma rápida | 
-| tesistas             | ticamente incremente las  | cuantas iteraciones se han|
-|                      | versiones de las revisio- | realizado.                |
-|                      | nes de tesis              |                           |
+| profesor encargado de| que la plataforma         | pueda ver de forma rápida | 
+| tesistas             | automáticamente incremente| cuantas iteraciones se han|
+|                      | las versiones de las      | realizado.                |
+|                      | revisiones de tesis       |                           |
 +----------------------+---------------------------+---------------------------+
 | profesor encargado de| poder asignar un estado a | pueda distinguir entre las| 
 | tesistas             | cada tesis                | que ya fueron cerradas,   |
@@ -25,13 +25,7 @@ Area de Historias de Usuario
 |                      |                           | y las que están en        |
 |                      |                           | corrección                |
 +----------------------+---------------------------+---------------------------+
-| profesor encargado de| poder guardar los archivos| pueda tener un reposit-   | 
-| tesistas             | PDF que me envíen los     | torio de distintas tesis  |
-|                      | alumnos tesistas en la    | y sus distintas versiones.|
-|                      | plataforma                |                           |
-+----------------------+---------------------------+---------------------------+
-| profesor encargado de| poder guardar los archivos| pueda tener un reposit-   | 
-| tesistas             | PDF que me envíen los     | torio de distintas tesis  |
-|                      | alumnos tesistas en la    | y sus distintas versiones.|
-|                      | plataforma                |                           |
+| profesor encargado de| poder extraer el contenido| pueda  leer el texto de la| 
+| tesistas             | del archivo PDF           | tesis dentro de la misma  |
+|                      |                           | plataforma.               |
 +----------------------+---------------------------+---------------------------+
