@@ -2,9 +2,6 @@
 Visión, Objetivos y Área
 ========
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+:Visión:
+
+El proceso de monitoreo del estado de avance de los trabajos de muchos alumnos tesistas, es un problema no trivial para el profesor guía y podría ser simplificado de contar con una solución informática capaz de capturar y sistematizar el contenido a partir de los informes de avance reportados como archivos PDF por los alumnos.
