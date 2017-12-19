@@ -9,7 +9,7 @@ Area de Historias de Usuario
 | tesistas :: a        | email institucional y mi  | tesis de mis alumnos.    |
 |                      | contraseña                |                          |
 +----------------------+---------------------------+--------------------------+
-| profesor encargado de| 
+| profesor encargado de|                           |                          | 
 | tesistas             |                           |                          |
 +----------------------+---------------------------+--------------------------+
 
