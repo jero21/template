@@ -7,9 +7,9 @@ Area de Historias de Usuario
 +=================================+===================================+=============================+
 | profesor encargado de tesistas  | acceder al sistema con mi email   | pueda trabajar con las tesis|
 |																	|	institucional y mi contraseña     | de mis alumnos              |
-+---------------------------------+-------------------+---------------+-----------------------------+
-| alumno tesista                  | ...               | ...           |                             | 
-+---------------------------------+-------------------+---------------+-----------------------------+
++---------------------------------+-----------------------------------+-----------------------------+
+| alumno tesista                  |                                   |                             | 
++---------------------------------+-----------------------------------+-----------------------------+
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
