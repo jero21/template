@@ -46,3 +46,11 @@ Area de Historias de Usuario
 |                      | plataforma con mi correo  | personal con respecto a mi|
 |                      | institucional y contraseña| tesis.                    |
 +----------------------+---------------------------+---------------------------+
+| Alumno tesista       | ver los comentarios que ha| pueda tener claro lo que  | 
+|                      | hecho mi profesor guía    | mi profesor guía me pidio |
+|                      |                           | corregir o agregar.       |
++----------------------+---------------------------+---------------------------+
+| Alumno tesista       | responder comentarios     | podriamos tener una mejor | 
+|                      | de mi profesor guía       | comunicación del contenido|
+|                      |                           | y avances de la tesis     |
++----------------------+---------------------------+---------------------------+
