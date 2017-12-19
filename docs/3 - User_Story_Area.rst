@@ -29,3 +29,20 @@ Area de Historias de Usuario
 | tesistas             | del archivo PDF           | tesis dentro de la misma  |
 |                      |                           | plataforma.               |
 +----------------------+---------------------------+---------------------------+
+| profesor encargado de| poder corregir y realizar | el alumno cuando acceda   | 
+| tesistas             | comentarios a las tesis   | con su cuenta, pueda ver  |
+|                      | dentro de la plataforma   | que correcciones dene     |
+|                      |                           | realizar para la siguiente|
+|                      |                           | iteración.                |
++----------------------+---------------------------+---------------------------+
+| profesor encargado de| poder ver la cantidad de  | inferir el volumen de     | 
+| tesistas             | caracteres que tiene el   | trabajo ejecutado a partir|
+|                      | archivo PDF               | de la cantidad de texto   |
+|                      |                           | producido por el alumno   |
+|                      |                           | tesista en las distintas  |
+|                      |                           | iteraciones.              |
++----------------------+---------------------------+---------------------------+
+| Alumno tesista       | poder acceder a la        | pueda  ver mi informacion | 
+|                      | plataforma con mi correo  | personal con respecto a mi|
+|                      | institucional y contraseña| tesis.                    |
++----------------------+---------------------------+---------------------------+
