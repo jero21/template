@@ -2,14 +2,14 @@
 Area de Historias de Usuario
 ========
 
-+---------------------------------+-----------------------------------+-----------------------------+
-| Como                            | quiero                            | de modo que                 |
-+=================================+===================================+=============================+
-| profesor encargado de tesistas  | acceder al sistema con mi email   | pueda trabajar con las tesis|
-|																	|	institucional y mi contraseña     | de mis alumnos              |
-+---------------------------------+-----------------------------------+-----------------------------+
-| alumno tesista                  |                                   |                             | 
-+---------------------------------+-----------------------------------+-----------------------------+
++---------------------------------+--------------------------------+--------------------------+
+| Como                            | quiero                         | de modo que              |
++=================================+================================+==========================+
+| profesor encargado de tesistas  | acceder al sistema con mi email| pueda trabajar con las   |
+|																	|	institucional y mi contraseña  | tesis de mis alumnos     |
++---------------------------------+--------------------------------+--------------------------+
+| alumno tesista                  |                                |                          | 
++---------------------------------+--------------------------------+--------------------------+
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
