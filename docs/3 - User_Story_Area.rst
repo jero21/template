@@ -6,10 +6,10 @@ Area de Historias de Usuario
 | Como                          | quiero                    | de modo que              |
 +===============================+===========================+==========================+
 | profesor encargado de tesistas| acceder al sistema con mi | pueda trabajar con las   |
-|																|	institucional y mi        | tesis de mis alumnos     |
-|                               | email contraseña          |                          | 
+|																|	email institucional y mi  | tesis de mis alumnos.    |
+|                               | contraseña                |                          |
 +-------------------------------+---------------------------+--------------------------+
-| alumno tesista                |                           |                          | 
+| alumno tesista                |                           |                          |
 +-------------------------------+---------------------------+--------------------------+
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
