@@ -35,6 +35,7 @@ Está enfocada en describir la estructura y funcionalidad del sistema, y para é
 
 :Vista de desarrollo:
 ^^^^^^^^^^^^^^^^^^^^^
+
 Ilustra el sistema de la perspectiva del programador y está enfocado en la administración de los artefactos de software.
 El Diagrama Componentes UML se utiliza para describir los componentes del sistema.
 El cual contiene dos componentes
@@ -49,6 +50,7 @@ El cual contiene dos componentes
 
 :Vista de proceso:
 ^^^^^^^^^^^^^^^^^
+
 Explica los procesos de sistema y cómo se comunican. se enfoca en el comportamiento del sistema en tiempo de ejecución
 
 Esta vista se representará con un diagrama de Actividad.
@@ -56,6 +58,7 @@ Esta vista se representará con un diagrama de Actividad.
 
 :Vista fisica:
 ^^^^^^^^^^^^^^
+
 Describe el sistema desde el punto de vista de un ingeniero de sistemas. Está relacionada con la topología de componentes de software en la capa física (hardware), así como las conexiones físicas entre estos componentes.
 
 En el se muestra dos nodos, como capa física y dentro de ellos sus artefactos o componentes de software:
@@ -74,6 +77,7 @@ En el se muestra dos nodos, como capa física y dentro de ellos sus artefactos o
 
 :Escenarios:
 ^^^^^^^^^^^^
+
 Los escenarios describen secuencias de interacciones entre objetos, y entre procesos. Se utilizan para identificar y validar el diseño de arquitectura. También sirven como punto de partida para pruebas de un prototipo de arquitectura.
 La descripción de la arquitectura se ilustra utilizando un conjunto de casos de uso.
 
