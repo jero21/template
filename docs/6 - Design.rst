@@ -16,15 +16,20 @@ Las cuatro vistas del modelo son:
 Dichas vistas se mencionan a continuación:
 
 :Vista lógica:
+^^^^^^^^^^^^^^
 
 Está enfocada en describir la estructura y funcionalidad del sistema, y para éste sistema se utilizó un diagrama de Clases para representar esta Vista. El cual está separado en 2 package:
 
-+-------------------------------------------+
-| term [ " : " Package AppAnalizarTesis: ]* |
-+--+----------------------------------------+--+
-   | definition                                |
-   | Clases 1: Index                           |
-   +-------------------------------------------+
+#.Package AppAnalizarTesis: 
+
+* Clases 1: Index
+* Clase 2: ProcesarTesisPdf
+
+#. Package WS-AnalizarPDF (Servicio Web):
+
+* Clase 1: AnalizarPdf
+* Clase 2: Parser
+
 
 .. image:: image/d_clases.png
 
