@@ -1,6 +1,6 @@
-========
+==================================
 Diseño -  Modelo 4+1 - Documento 1
-========
+==================================
 
 El método 4+1 nos permitirá describir la arquitectura de sistemas software llamado Repositorio para análisis de Archivos PDF de Tesis, basados en el uso de múltiples vistas concurrentes.
 Estas vistas nos permitirán analizar el problema y describir el sistema desde el punto de vista de distintos interesados, como lo son los usuarios finales (Usuario profesor guía y Usuario estudiante tesista), los desarrolladores y/o jefes de proyecto.
@@ -34,7 +34,7 @@ Está enfocada en describir la estructura y funcionalidad del sistema, y para é
 .. image:: image/d_clases.png
 
 :Vista de desarrollo:
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 
 Ilustra el sistema de la perspectiva del programador y está enfocado en la administración de los artefactos de software.
 El Diagrama Componentes UML se utiliza para describir los componentes del sistema.
@@ -49,7 +49,7 @@ El cual contiene dos componentes
 .. image:: image/d_componentes.png
 
 :Vista de proceso:
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 :Vista fisica:
 ^^^^^^^^^^^^^^
