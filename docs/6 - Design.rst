@@ -55,6 +55,14 @@ Explica los procesos de sistema y cómo se comunican. se enfoca en el comportami
 
 Esta vista se representará con un diagrama de Actividad.
 
+En él se detallan tres actores:
+
+#. Usuario
+#. App
+#. Servidor Web
+
+.. image:: image/d_actividad.png
+
 
 :Vista fisica:
 ^^^^^^^^^^^^^^
