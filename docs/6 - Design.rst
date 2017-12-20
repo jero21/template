@@ -1,5 +1,5 @@
 ===============================================================
-Diseño -  Modelo 4+1 - Documento 1 (Software Design Guidelines)
+Diseño -  Modelo 4+1 - Documento 1 (Software Architecture Document)
 ===============================================================
 
 El método 4+1 nos permitirá describir la arquitectura de sistemas software llamado Repositorio para análisis de Archivos PDF de Tesis, basados en el uso de múltiples vistas concurrentes.
