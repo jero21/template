@@ -19,12 +19,12 @@ Dichas vistas se mencionan a continuación:
 
 Está enfocada en describir la estructura y funcionalidad del sistema, y para éste sistema se utilizó un diagrama de Clases para representar esta Vista. El cual está separado en 2 package:
 
-+----------------------------+
-| term [ " : " classifier ]* |
-+--+-------------------------+--+
-   | definition                 |
-   | (body elements)+           |
-   +----------------------------+
++-------------------------------------------+
+| term [ " : " Package AppAnalizarTesis: ]* |
++--+----------------------------------------+--+
+   | definition                                |
+   | Clases 1: Index                           |
+   +-------------------------------------------+
 
 .. image:: image/d_clases.png
 
