@@ -1,6 +1,6 @@
-==================================
-Diseño -  Modelo 4+1 - Documento 1
-==================================
+===============================================================
+Diseño -  Modelo 4+1 - Documento 1 (Software Design Guidelines)
+===============================================================
 
 El método 4+1 nos permitirá describir la arquitectura de sistemas software llamado Repositorio para análisis de Archivos PDF de Tesis, basados en el uso de múltiples vistas concurrentes.
 Estas vistas nos permitirán analizar el problema y describir el sistema desde el punto de vista de distintos interesados, como lo son los usuarios finales (Usuario profesor guía y Usuario estudiante tesista), los desarrolladores y/o jefes de proyecto.

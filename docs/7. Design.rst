@@ -1,0 +1,6 @@
+===============================================================
+Diseño -  Modelo 4+1 - Documento 2 (Software Design Guidelines)
+===============================================================
+
+:Repositorio para Análisis de Archivos PDF de Tesis Software Design Guidelines:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
