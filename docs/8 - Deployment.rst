@@ -5,7 +5,7 @@ Deployment
 La aplicación se encuentra disponible en:
 
 
-.. _Aplicación: http://35.192.225.221/lab/repo_tesis/
+<a href="http://35.192.225.221/lab/repo_tesis/">Aplicación</a>
 
 El servicio web está en línea en:
 
