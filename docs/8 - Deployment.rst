@@ -5,11 +5,11 @@ Deployment
 La aplicación se encuentra disponible en:
 
 
-<a href="http://35.192.225.221/lab/repo_tesis/">Aplicación</a>
+http://35.192.225.221/lab/repo_tesis/
 
 El servicio web está en línea en:
 
-.. _Servicio web: http://35.192.225.221/lab/pdfparser-master/analizadorpdf.php
+http://35.192.225.221/lab/pdfparser-master/analizadorpdf.php
 
 Las solicitudes al servicio web deben efectuarse usando el método GET, considerando los siguientes parámetros:
 
