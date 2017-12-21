@@ -95,7 +95,7 @@ Las cuatro vistas lógica, desarrollo, proceso y física convergen en la vista d
 Los esfuerzos en términos de recursos computacionales a asignar deberán apuntar a minimizar los Tiempos de Respuesta requeridos por el sistema para el proceso de análisis y presentación de resultados. 
 Ante la variabilidad del comportamiento de los servicios remotos en función de la conectividad disponible, tráfico, concurrencia y volumen de datos, los métodos de despliegue implementan controles para detectar eventuales excepciones e informarlas al usuario mediante adecuado feedback basado en códigos de error estándar http.
 
-11. Size and Performance
+11. **Size and Performance**
 
 La arquitectura planteada, basada en servicios, posee límites en tamaño y rendimiento dados principalmente por las capacidades de cómputo de la infraestructura, las cuales normalmente pueden ser bien controladas en entornos de plataforma como servicio (en la nube). En el caso de utilizar servidores propios, por tratarse de un servicio compartido, es posible que el componente correspondiente al servicio web que implementa análisis de pdf, se convierta en un cuello de botella que limite el rendimiento, sin embargo, dado que la solución está basada en servicios, es también compatible con una infraestructura de alto rendimiento, a implementar mediante un cluster de servidores y balanceador de carga, sin requerir ningún cambio a nivel de aplicación ni servicio web.
 
