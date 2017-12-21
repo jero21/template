@@ -46,7 +46,7 @@ La clase ProcesadorTesisPdf() se encarga de recibir el archivo pdf enviado para 
 
 .. image:: image/procesadorTesisPdf.png
 
-La clase AnalizadorPdf() implementa el servicio web que será utilizado por la aplicación. Los parámetros de entrada encapsulan la autentificación y la ubicación (enlace http) al archivo pdf que debe ser analizado. Mediante el método obtener_atributos_pdf(), se obtiene el pdf remoto, se almacena en un archivo temporal y luego se analiza. Para el análisis se utiliza la clase Parser() que implementa métodos de análisis de archivos pdf, como por ejemplo, la extracción del contenido en formato texto (getText), el conteo de páginas y caracteres (getDetails).
+La clase AnalizadorPdf() debe implementar el servicio web que será utilizado por la aplicación. Los parámetros de entrada encapsulan la autentificación y la ubicación (enlace http) al archivo pdf que debe ser analizado. Mediante el método obtener_atributos_pdf(), se debe obtenerel pdf remoto, almacenar en un archivo temporal y luego se debe proceder con el análisis. Para este análisis se debe utilizar la clase Parser() que implementa métodos de análisis de archivos pdf, como por ejemplo, la extracción del contenido en formato texto (getText), el conteo de páginas y caracteres (getDetails).
 
 .. image:: image/parser.png
 
@@ -54,27 +54,28 @@ La clase AnalizadorPdf() implementa el servicio web que será utilizado por la a
 6. **Process Architecture**
 
 Los componentes aplicación (App) y Servicio Web (Ws) interactúan para permitir al usuario completar el proceso de subida de archivos pdf y revisión del texto y número de caracteres.
-El proceso se inicia cuando el usuario sube un archivo pdf. La App almacena el archivo en una ubicación que queda visible en internet para el Ws, luego prepara la solicitud para el Ws especificando en la solicitud la ubicación del archivo en internet (en la solicitud se envía parámetros que abrevian la URL real del archivo pdf que debe ser analizado, además de un token que controla el acceso autorizado). Una vez construida la solicitud es enviada por la App al Ws, el cual reconstruye la URL del archivo pdf, lo descarga desde internet, lo analiza y si todo sale bien devuelve el resultado empaquetado en formato JSON.
-Es posible que muchas App consuman el Ws, por tanto deberá disponerse la infraestructura necesaria para soportar la concurrencia requerida. El prototipo implementado utiliza un archivo temporal para almacenar y analizar el pdf y se tuvo la precaución de utilizar nombres de archivos temporales únicos para evitar colisiones.
-Debe considerarse asignar los recursos de procesamiento necesarios para que el Ws efectúe el análisis del pdf en un tiempo apropiado, que debe estar evidentemente por debajo del timeout de la conexión http y considerar el tiempo de espera aceptable para el usuario objetivo y la concurrencia esperada. Debe establecerse y configurarse límites apropiados también para el tamaño del archivo pdf, debido a que se detectó mediante pruebas preliminares que esta variable impacta directamente en los tiempos requeridos para el procesamiento.
-El proceso puede verse interrumpido por diversos eventos asociados a la naturaleza de los servicios Web, por tanto estos eventos deben ser adecuadamente capturados, codificados e informados por la App. El prototipo implementa por ejemplo los siguientes códigos de mensajes de error http:
-
+El proceso se inicia cuando el usuario sube un archivo pdf. La App debe almacenar el archivo en una ubicación que debe quedar visible en internet para el Ws, luego debe preparar la solicitud para el Ws especificando en la solicitud la ubicación del archivo en internet (en la solicitud se debe enviar parámetros abreviando la URL real del archivo pdf que debe ser analizado, además de un token para controlar el acceso autorizado). Una vez construida la solicitud debe ser enviada por la App al Ws, el cual podría reconstruir la URL del archivo pdf, descargalo desde internet, analizarlo y si todo sale bien devolver el resultado empaquetado en formato JSON.
+Es posible que muchas App consuman el Ws, por tanto se deberá disponerse la infraestructura necesaria para soportar la concurrencia requerida. El prototipo a implementar debeutilizar archivos temporales para almacenar y analizar el pdf y debe tener la precaución de utilizar nombres de archivos temporales únicos para evitar colisiones.
+Debe considerarse asignar los recursos de procesamiento necesarios para que el Ws efectúe el análisis del pdf en un tiempo apropiado, que debe estar evidentemente por debajo del timeout de la conexión http Ws y considerar el tiempo de espera aceptable para el usuario objetivo y la concurrencia esperada por el lado de la App. Debe establecerse y configurarse límites apropiados también para el tamaño del archivo pdf, debido a que se detectó mediante pruebas preliminares de la clase Parser() que esta variable impacta directamente en los tiempos requeridos para el procesamiento.
+El proceso puede verse interrumpido por diversos eventos asociados a la naturaleza de los servicios Web, por tanto estos eventos deben ser adecuadamente capturados, codificados e informados por la App. Por ejemplo, cuando aplique, se debería implementar al menos códigos de mensajes de error http como los siguientes:
 
 * 503 'Service Unavailable'
 * 405 'Method Not Allowed'
-* 400 'Bad Request'
+* 400 'Unauthorized''
 * 401 'Bad Request'
 * 404 'Not Found'
 * 500 'Internal Server Error'
 
+
 7. **Development Architecture**
 
-El sistema está basado en dos componentes que interactúan a través de una jerarquía donde la aplicación consume los servicios del web service para entregar al usuario los resultados de análisis requeridos respecto a un pdf. 
+El sistema estará basado en dos componentes que deben interactuar a través de una jerarquía donde la aplicación debe consumir los servicios del web service para entregar al usuario los resultados de análisis requeridos respecto a un pdf.  
 
 .. image:: image/d_componentes.png
 
-El componente asociado a la aplicación implementa aquellos relacionado con la interfaz de usuario y el control de las solicitudes y resultados efectuadas al Web service (todos asociados al dominio específico de necesidades de revisión de trabajos de tesis). Es posible identificar paquetes de trabajo para la etapa de codificación, donde se deberá abordar la construcción elementos interfaz de usuario, comunicaciones con web service y análisis de archivos pdf.
-El componente correspondiente al servicio web no está asociado a dominio específico, sino al propósito genérico de analizar archivos pdf, razón por la cual el componente es reutilizable y a la vez abre posibilidades de incorporar componentes desarrollados por terceros. Una ventaja muy relevante de utilizar servicios web, consisten en la independencia de la tecnología a utilizar para su implementación, sin embargo se debe tener en cuenta las posibilidades de infraestructura disponibles y los perfiles disponibles a su vez en el equipo de desarrollo. Los aspectos de seguridad son relevantes toda vez que los datos intercambiados con el servicio web pueden quedar expuestos en un canal no seguro, por lo cual se recomienda el uso de https en producción, además de los mecanismos de autentificación usuales. Deberá considerarse paquetes de trabajo asociados a aspectos de seguridad, en particular la configuración y verificación de https y autenticación.
+El componente asociado a la aplicación debe implementar lo relacionado con la interfaz de usuario y el control de las solicitudes (y sus resultados) efectuadas al Web service (todos asociados al dominio específico de necesidades de revisión de trabajos de tesis). Es posible identificar paquetes de trabajo para la etapa de codificación, donde se deberá abordar la construcción elementos interfaz de usuario, comunicaciones con web service y análisis de archivos pdf.
+El componente correspondiente al servicio web no está asociado a un dominio específico, sino al propósito genérico de analizar archivos pdf, razón por la cual el componente es reutilizable y a la vez abre posibilidades de incorporar componentes genéricos desarrollados por terceros. Una ventaja muy relevante de utilizar servicios web, consisten en la independencia de la tecnología a utilizar para su implementación, sin embargo se debe tener en cuenta las posibilidades de infraestructura y los perfiles disponibles a su vez en el equipo de desarrollo. Los aspectos de seguridad son relevantes toda vez que los datos intercambiados con el servicio web pueden quedar expuestos en un canal no seguro, por lo cual se recomienda el uso de https, además de los mecanismos de autentificación usuales. Deberá considerarse paquetes de trabajo asociados a aspectos de seguridad, en particular la configuración y verificación de https y autenticación.
+
 
 8. **Physical Architecture**
 
@@ -86,14 +87,15 @@ Este mapeo otorga flexibilidad e implica mínimo impacto en el código fuente. E
 
 9. **Scenarios**
 
-Las cuatro vistas lógica, desarrollo, proceso y física convergen en la vista de escenario mediante un diagrama de caso de uso, que destaca los comportamientos relevantes del sistema que a su vez presentan resultados observables como el despliegue del formulario de upload por parte de la aplicación, que permite gatillar el proceso de subida de archivos pdf, el cual a su vez mediante el consumo del servicio web de análisis de archivos pdf, permite entregar los resultados de análisis de la tesis reportada por el usuario.
+Las cuatro vistas lógica, desarrollo, proceso y física convergen en la vista de escenario mediante un diagrama de caso de uso, que destaca los comportamientos relevantes del sistema que a su vez presentan resultados observables para el profesor guía, como el despliegue del formulario de upload por parte de la aplicación, que permitirá gatillar el proceso de subida de archivos pdf, el cual a su vez mediante el consumo del servicio web de análisis de archivos pdf, deberá entregar los resultados de análisis de la tesis reportada por el usuario en el archivo pdf.
 
 .. image:: image/d_casos_uso.png
 
 10. **Quality**
 
 Los esfuerzos en términos de recursos computacionales a asignar deberán apuntar a minimizar los Tiempos de Respuesta requeridos por el sistema para el proceso de análisis y presentación de resultados. 
-Ante la variabilidad del comportamiento de los servicios remotos en función de la conectividad disponible, tráfico, concurrencia y volumen de datos, los métodos de despliegue implementan controles para detectar eventuales excepciones e informarlas al usuario mediante adecuado feedback basado en códigos de error estándar http.
+Ante la variabilidad del comportamiento de los servicios remotos en función de aspectos como la conectividad disponible, tráfico, concurrencia y volumen de datos, etc., los métodos de despliegue deben implementar controles para detectar eventuales excepciones e informarlas oportunamente al usuario mediante adecuado feedback basado en códigos de error estándar http.
+
 
 11. **Size and Performance**
 
@@ -123,7 +125,7 @@ SOA: Service Oriented Architecture (SOA) es un paradigma para organizar y utiliz
 
  C. **Design Principles**
 
-El diseño arquitectural presentado, se basa en SOA y responde a las prioridades y principios expuestos en su Manifesto [2], con especial énfasis para el alcance de este prototipo en los siguientes aspectos:
+El diseño arquitectural presentado, se basa en SOA y responde a las prioridades y principios expuestos en su Manifesto [2], con especial énfasis para el alcance de este en los siguientes aspectos
 
 * Priorizar la descomposición de la arquitectura en componentes independientes por sobre una estructura monolítica.
 
@@ -133,4 +135,4 @@ El diseño arquitectural presentado, se basa en SOA y responde a las prioridades
 
 * Se busca el uso de servicios compartidos en vez de la implementación de uso exclusivo.
 
-* Se aspira a la mejora evolutiva por sobre la búsqueda de la perfección inicial (especialmente para este prototipo).
+* Se aspira a la mejora evolutiva por sobre la búsqueda de la perfección inicial .

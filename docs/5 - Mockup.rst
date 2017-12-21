@@ -10,8 +10,8 @@ El sistema despliega un cuadro de diálogo de selección de archivo PDF cuando e
 
 .. image:: image/mcp2.png
 
-Una vez que el archivo seleccionado es subido y el usuario hace clic en el botón Subir, el sistema despliega la siguiente interfaz, donde se despliega el conteo de caracteres de texto encontrados en el PDF y el contenido correspondiente en formato texto plano:
+Una vez que el archivo seleccionado es subido y el usuario hace clic en el botón Subir, el sistema presenta la siguiente interfaz, donde se despliega el conteo de caracteres de texto encontrados en el PDF y el contenido correspondiente en formato texto plano:
 
 .. image:: image/mcp3.png
 
-**Para repetir el proceso y volver al subir un nuevo archivo PDF, el usuario puede hacer clic en el botón Volver y el sistema desplegará la interfaz inicial.**
+**Para repetir el proceso y volver a subir un nuevo archivo PDF, el usuario puede hacer clic en el botón Volver y el sistema desplegará la interfaz inicial.**
