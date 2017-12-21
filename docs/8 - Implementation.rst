@@ -21,11 +21,22 @@ A continuación el resumen de casos de prueba ejecutados:
 |         |             |                    |de microtime para          |            |               |            |               |
 |         |             |                    |evitar colision            |            |               |            |               |
 +---------+-------------+--------------------+---------------------------+------------+---------------+------------+---------------+
-|Resuelto |* Claudio    |Verificar que las   |                           |19/12/2017  |**Ok:** llamada|21/12/2017  |**Ok:** Opera  |
-|         |* Jeremías   |llamadas al Ws      |                           |            |construida de  |            |Correctamente. |
+|Resuelto |* Claudio    |Verificar que las   |                           |19/12/2017  |**Ok:** llamada|            |               |
+|         |* Jeremías   |llamadas al Ws      |                           |            |construida de  |            |               |
 |         |             |sean consistentes   |                           |            |forma correcta.|            |               |
 |         |             |en métodos y        |                           |            |               |            |               |
 |         |             |parametros.         |                           |            |               |            |               |
++---------+-------------+--------------------+---------------------------+------------+---------------+------------+---------------+
+|Resuelto |* Claudio    |Comprobar operación |                           |20/12/2017  |**Ok:**        |20/12/2017  |**Ok:** Opera  |
+|         |* Jeremías   |de aplicacioón      |                           |            |aplicacion     |            |Correctamente  |
+|         |             |cuando el Ws se     |                           |            |presenta       |            |               |
+|         |             |encuentra           |                           |            |mensajes de    |            |               |
+|         |             |inaccesible         |                           |            |error y no     |            |               |
+|         |             |                    |                           |            |controla       |            |               |
+|         |             |                    |                           |            |ejecucion      |            |               |
+|         |             |                    |                           |            |cuando el Ws   |            |               |
+|         |             |                    |                           |            |no responde o  |            |               |
+|         |             |                    |                           |            |no existe.     |            |               |
 +---------+-------------+--------------------+---------------------------+------------+---------------+------------+---------------+
 |Resuelto |* Claudio    |Implementar         |Implementar por lo menos   |21/12/2017  |**Ok:**        |            |               |
 |         |* Jeremías   |mensajes de error   |                           |            |Simulados y    |            |               |
