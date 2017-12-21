@@ -9,12 +9,12 @@ Diseño -  Modelo 4+1 - Documento 2 (Software Design Guidelines)
 
 Versión 1.0, Versión inicial completa, jmora, cnavarro, Diciembre de 2017.
 
-#. **Scope**
+1. **Scope**
 
 Este documento muestra los principales elementos que componen la arquitectura del sistema Repositorio para Análisis de Archivos PDF de Tesis. La arquitectura propuesta, es una versión parcial de todo el sistema acotada exclusivamente a los componentes que que abordan las historias de usuario seleccionadas.
 
 
-#. **References**
+2. **References**
 
 Este documento se encuentra estructurado de acuerdo a las recomendaciones provistas en:
 
@@ -23,16 +23,16 @@ Este documento se encuentra estructurado de acuerdo a las recomendaciones provis
 [2] http://www.soa-manifesto.org/default_spanish.html, consultado el 18 de diciembre de 2017.
 
 
-#. **Software Architecture**
+3. **Software Architecture**
 
 Para el diseño del sistema se ha definido la utilizar una arquitectura orientada a servicios (SOA). 
 
-#. **Architectural Goals & Constraints**
+4. **Architectural Goals & Constraints**
 
 La razón para utilizar SOA se fundamenta en la necesidad de independizar los componentes del sistema, para separar aspectos que pueden variar a velocidades diferentes. Por ejemplo, un proceso relevante que efectúa el sistema es el análisis de archivos pdf, cuyos estándares pueden variar en una línea totalmente independiente del modo como podrían cambiar las necesidades de eventuales cambios en la interfaz de usuario del sistema, por tanto se estima conveniente separar estos aspectos.
 Una desventaja relevante de utilizar SOA está asociada a los tiempos de respuesta dependientes de la velocidad con que logren interoperar los componentes a implementar, se deberá poner atención en los volúmenes de datos a intercambiar en términos de parámetros y resultados en la interacción con los servicios.
 
-#. **Logical Architecture**
+5. **Logical Architecture**
 
 Las historias de usuario seleccionadas están enfocadas en el proceso de upload y análisis de archivos PDF. El modelo lógico refleja por tanto los elementos del sistema que permiten al usuario especificar el archivo pdf a subir y analizar el archivo pdf, mediante las clases Index() y  ProcesadorTesisPdf() respectivamente, las cuales acceden al servicio web implementado en la clase AnalizadorPdf().
 
@@ -51,7 +51,7 @@ La clase AnalizadorPdf() implementa el servicio web que será utilizado por la a
 .. image:: image/parser.png
 
 
-#. **Process Architecture**
+6. **Process Architecture**
 
 Los componentes aplicación (App) y Servicio Web (Ws) interactúan para permitir al usuario completar el proceso de subida de archivos pdf y revisión del texto y número de caracteres.
 El proceso se inicia cuando el usuario sube un archivo pdf. La App almacena el archivo en una ubicación que queda visible en internet para el Ws, luego prepara la solicitud para el Ws especificando en la solicitud la ubicación del archivo en internet (en la solicitud se envía parámetros que abrevian la URL real del archivo pdf que debe ser analizado, además de un token que controla el acceso autorizado). Una vez construida la solicitud es enviada por la App al Ws, el cual reconstruye la URL del archivo pdf, lo descarga desde internet, lo analiza y si todo sale bien devuelve el resultado empaquetado en formato JSON.
@@ -67,7 +67,7 @@ El proceso puede verse interrumpido por diversos eventos asociados a la naturale
 * 404 'Not Found'
 * 500 'Internal Server Error'
 
-#. **Development Architecture**
+7. **Development Architecture**
 
 El sistema está basado en dos componentes que interactúan a través de una jerarquía donde la aplicación consume los servicios del web service para entregar al usuario los resultados de análisis requeridos respecto a un pdf. 
 
@@ -76,7 +76,7 @@ El sistema está basado en dos componentes que interactúan a través de una jer
 El componente asociado a la aplicación implementa aquellos relacionado con la interfaz de usuario y el control de las solicitudes y resultados efectuadas al Web service (todos asociados al dominio específico de necesidades de revisión de trabajos de tesis). Es posible identificar paquetes de trabajo para la etapa de codificación, donde se deberá abordar la construcción elementos interfaz de usuario, comunicaciones con web service y análisis de archivos pdf.
 El componente correspondiente al servicio web no está asociado a dominio específico, sino al propósito genérico de analizar archivos pdf, razón por la cual el componente es reutilizable y a la vez abre posibilidades de incorporar componentes desarrollados por terceros. Una ventaja muy relevante de utilizar servicios web, consisten en la independencia de la tecnología a utilizar para su implementación, sin embargo se debe tener en cuenta las posibilidades de infraestructura disponibles y los perfiles disponibles a su vez en el equipo de desarrollo. Los aspectos de seguridad son relevantes toda vez que los datos intercambiados con el servicio web pueden quedar expuestos en un canal no seguro, por lo cual se recomienda el uso de https en producción, además de los mecanismos de autentificación usuales. Deberá considerarse paquetes de trabajo asociados a aspectos de seguridad, en particular la configuración y verificación de https y autenticación.
 
-#. **Physical Architecture**
+8. **Physical Architecture**
 
 La implementación de los componentes debe efectuarse para operar en máquinas o servidores diferentes. La aplicación podrá operar en un servidor A y el servicio web podrá operar en un servidor B. La comunicación podrá efectuarse a través de internet pero bajo estándares mínimos de protocolo seguro como https. En concreto ambos componentes quedan separados físicamente (aunque la “separación física” puede referirse también a máquinas virtuales distintas). 
 
@@ -84,18 +84,18 @@ La implementación de los componentes debe efectuarse para operar en máquinas o
 
 Este mapeo otorga flexibilidad e implica mínimo impacto en el código fuente. Es altamente recomendable utilizar infraestructura en la nube, de modo que los aspectos de disponibilidad, confiabilidad, rendimiento y escalabilidad, sean manejables en función de los recursos asignados.
 
-#. **Scenarios**
+9. **Scenarios**
 
 Las cuatro vistas lógica, desarrollo, proceso y física convergen en la vista de escenario mediante un diagrama de caso de uso, que destaca los comportamientos relevantes del sistema que a su vez presentan resultados observables como el despliegue del formulario de upload por parte de la aplicación, que permite gatillar el proceso de subida de archivos pdf, el cual a su vez mediante el consumo del servicio web de análisis de archivos pdf, permite entregar los resultados de análisis de la tesis reportada por el usuario.
 
 .. image:: image/d_casos_uso.png
 
-#. **Quality**
+10. **Quality**
 
 Los esfuerzos en términos de recursos computacionales a asignar deberán apuntar a minimizar los Tiempos de Respuesta requeridos por el sistema para el proceso de análisis y presentación de resultados. 
 Ante la variabilidad del comportamiento de los servicios remotos en función de la conectividad disponible, tráfico, concurrencia y volumen de datos, los métodos de despliegue implementan controles para detectar eventuales excepciones e informarlas al usuario mediante adecuado feedback basado en códigos de error estándar http.
 
-#. Size and Performance
+11. Size and Performance
 
 La arquitectura planteada, basada en servicios, posee límites en tamaño y rendimiento dados principalmente por las capacidades de cómputo de la infraestructura, las cuales normalmente pueden ser bien controladas en entornos de plataforma como servicio (en la nube). En el caso de utilizar servidores propios, por tratarse de un servicio compartido, es posible que el componente correspondiente al servicio web que implementa análisis de pdf, se convierta en un cuello de botella que limite el rendimiento, sin embargo, dado que la solución está basada en servicios, es también compatible con una infraestructura de alto rendimiento, a implementar mediante un cluster de servidores y balanceador de carga, sin requerir ningún cambio a nivel de aplicación ni servicio web.
 
