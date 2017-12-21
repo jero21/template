@@ -75,4 +75,9 @@ La implementación de los componentes debe efectuarse para operar en máquinas o
 
 .. image:: image/d_despliegue.png
 
+Este mapeo otorga flexibilidad e implica mínimo impacto en el código fuente. Es altamente recomendable utilizar infraestructura en la nube, de modo que los aspectos de disponibilidad, confiabilidad, rendimiento y escalabilidad, sean manejables en función de los recursos asignados.
 
+#. **Scenarios**
+Las cuatro vistas lógica, desarrollo, proceso y física convergen en la vista de escenario mediante un diagrama de caso de uso, que destaca los comportamientos relevantes del sistema que a su vez presentan resultados observables como el despliegue del formulario de upload por parte de la aplicación, que permite gatillar el proceso de subida de archivos pdf, el cual a su vez mediante el consumo del servicio web de análisis de archivos pdf, permite entregar los resultados de análisis de la tesis reportada por el usuario.
+
+.. image:: image/d_casos_uso.png
