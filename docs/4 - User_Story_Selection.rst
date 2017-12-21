@@ -1,6 +1,8 @@
-========
+=================================
 Selección de Historias de Usuarios
-========
+=================================
+
+Las historias de usuarios seleccionadas para la primera versión de la plataforma son las siguientes:
 
 +----------------------+---------------------------+---------------------------+
 | Como                 | quiero                    | de modo que               |
@@ -16,3 +18,5 @@ Selección de Historias de Usuarios
 |                      |                           | tesista en las distintas  |
 |                      |                           | iteraciones.              |
 +----------------------+---------------------------+---------------------------+
+
+Dichas Historias de Usuario consisten en subir un archivo para luego visualizar el contenido entregado por un servicio web, esto corresponde a un paso anterior a guardar el contenido en la plataforma, para así poder usar el contenido cuando se desee.

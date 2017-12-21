@@ -1,6 +1,8 @@
-========
+================================
 Area de Historias de Usuario
-========
+================================
+
+A continuación de detallan las Historias de Usuario de un Profesor encargado de tesistas o también llamado profesor guía y un alumno tesista de pregrado.
 
 +----------------------+---------------------------+---------------------------+
 | Como                 | quiero                    | de modo que               |
