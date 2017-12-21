@@ -15,11 +15,16 @@ Este documento muestra los principales elementos que componen la arquitectura de
 
 
 #. **References**
+
 Este documento se encuentra estructurado de acuerdo a las recomendaciones provistas en:
 
-Kruchten, P. (1995). Architectural blueprints—The “4+ 1” view model of software architecture. Tutorial Proceedings of Tri-Ada, 95, 540-555.
+[1] Kruchten, P. (1995). Architectural blueprints—The “4+ 1” view model of software architecture. Tutorial Proceedings of Tri-Ada, 95, 540-555.
+
+[2] http://www.soa-manifesto.org/default_spanish.html, consultado el 18 de diciembre de 2017.
+
 
 #. **Software Architecture**
+
 Para el diseño del sistema se ha definido la utilizar una arquitectura orientada a servicios (SOA). 
 
 #. **Architectural Goals & Constraints**
