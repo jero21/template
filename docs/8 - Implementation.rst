@@ -27,13 +27,13 @@ A continuación el resumen de casos de prueba ejecutados:
 |         |             |en métodos y     |                           |            |               |            |               |
 |         |             |parametros.      |                           |            |               |            |               |
 +---------+-------------+-----------------+---------------------------+------------+---------------+------------+---------------+
-|Resuelto |* Claudio    |Implementar      |Se debe implementar        |21/12/2017  |**Ok:**        |            |               |
-|         |* Jeremías   |mensajes de error|al menos:                  |            |Simulados y    |            |               |
+|Resuelto |* Claudio    |Implementar      |Implementar por lo menos   |21/12/2017  |**Ok:**        |            |               |
+|         |* Jeremías   |mensajes de error|                           |            |Simulados y    |            |               |
 |         |             |basado en códigos|* 503 Service Unavailable  |            |verificados los|            |               |
 |         |             |http para cada   |* 405 Method Not Allowed   |            |mensajes       |            |               |
 |         |             |tarea ejecutada  |* 400 Unauthorized         |            |de error del   |            |               |
 |         |             |por el webservice|* 401 Bad Request          |            |webservice.    |            |               |
-|         |             |por el webservice|* 404 Not Found            |            |               |            |               |
-|         |             |por el webservice|* 500 Internal Server Error|            |               |            |               |
+|         |             |                 |* 404 Not Found            |            |               |            |               |
+|         |             |                 |* 500 Internal Server Error|            |               |            |               |
 +---------+-------------+-----------------+---------------------------+------------+---------------+------------+---------------+
 
