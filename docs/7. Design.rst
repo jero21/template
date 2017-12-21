@@ -68,6 +68,7 @@ El proceso puede verse interrumpido por diversos eventos asociados a la naturale
 * 500 'Internal Server Error'
 
 #. **Development Architecture**
+
 El sistema está basado en dos componentes que interactúan a través de una jerarquía donde la aplicación consume los servicios del web service para entregar al usuario los resultados de análisis requeridos respecto a un pdf. 
 
 .. image:: image/d_componentes.png
@@ -76,6 +77,7 @@ El componente asociado a la aplicación implementa aquellos relacionado con la i
 El componente correspondiente al servicio web no está asociado a dominio específico, sino al propósito genérico de analizar archivos pdf, razón por la cual el componente es reutilizable y a la vez abre posibilidades de incorporar componentes desarrollados por terceros. Una ventaja muy relevante de utilizar servicios web, consisten en la independencia de la tecnología a utilizar para su implementación, sin embargo se debe tener en cuenta las posibilidades de infraestructura disponibles y los perfiles disponibles a su vez en el equipo de desarrollo. Los aspectos de seguridad son relevantes toda vez que los datos intercambiados con el servicio web pueden quedar expuestos en un canal no seguro, por lo cual se recomienda el uso de https en producción, además de los mecanismos de autentificación usuales. Deberá considerarse paquetes de trabajo asociados a aspectos de seguridad, en particular la configuración y verificación de https y autenticación.
 
 #. **Physical Architecture**
+
 La implementación de los componentes debe efectuarse para operar en máquinas o servidores diferentes. La aplicación podrá operar en un servidor A y el servicio web podrá operar en un servidor B. La comunicación podrá efectuarse a través de internet pero bajo estándares mínimos de protocolo seguro como https. En concreto ambos componentes quedan separados físicamente (aunque la “separación física” puede referirse también a máquinas virtuales distintas). 
 
 .. image:: image/d_despliegue.png
@@ -83,6 +85,7 @@ La implementación de los componentes debe efectuarse para operar en máquinas o
 Este mapeo otorga flexibilidad e implica mínimo impacto en el código fuente. Es altamente recomendable utilizar infraestructura en la nube, de modo que los aspectos de disponibilidad, confiabilidad, rendimiento y escalabilidad, sean manejables en función de los recursos asignados.
 
 #. **Scenarios**
+
 Las cuatro vistas lógica, desarrollo, proceso y física convergen en la vista de escenario mediante un diagrama de caso de uso, que destaca los comportamientos relevantes del sistema que a su vez presentan resultados observables como el despliegue del formulario de upload por parte de la aplicación, que permite gatillar el proceso de subida de archivos pdf, el cual a su vez mediante el consumo del servicio web de análisis de archivos pdf, permite entregar los resultados de análisis de la tesis reportada por el usuario.
 
 .. image:: image/d_casos_uso.png
