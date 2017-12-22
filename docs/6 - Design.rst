@@ -55,6 +55,8 @@ La siguiente imágen fue creada con la herramienta **draw.io**
 
 .. image:: image/d_componentes.png
 
+No fue posible generar este diagrama con **codetouml** ya que la herramienta no provee de los comopnentes y conectores requeridos para ste diagrama.
+
 *Vista de proceso*
 ^^^^^^^^^^^^^^^^^
 
@@ -96,6 +98,8 @@ En el se muestra dos nodos, como capa física y dentro de ellos sus artefactos o
 La siguiente imágen fue creada con la herramienta **draw.io**
 
 .. image:: image/d_despliegue.png
+
+No fue posible generar este diagrama con **codetouml** ya que la herramienta no provee de los comopnentes y conectores requeridos para ste diagrama.
 
 *Escenarios*
 ^^^^^^^^^^^^
