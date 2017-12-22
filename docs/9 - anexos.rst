@@ -2,7 +2,8 @@
 Anexos
 ============
 
-:A. Código Diagrama de Clases con CodeToUml:
+*A. Código Diagrama de Clases con CodeToUml*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 [package AppAnalizarTesis|
   [ Index
@@ -39,7 +40,9 @@ Anexos
  ]
 ]
 
-:B. Código Diagrama Actividad con CodeToUml:
+*B. Código Diagrama Actividad con CodeToUml*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 [Sistema de repositorio y versionado de tesis|
   [Usuario|
@@ -64,7 +67,8 @@ Anexos
   ]
 ]
 
-:C. Código Diagrama de Casos de Uso con CodeToUml:
+*C. Código Diagrama de Casos de Uso con CodeToUml*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 [<actor> Alumno Tesista]
 [<actor> Profesor Guía] -> [<frame> Sistema de repositorio y versionado ;de tesis]
