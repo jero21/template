@@ -2,7 +2,7 @@
   [Usuario|
    [<start> start] -- [<state> Accede al;sistema]
    [<state> Accede al;sistema]--> [<state> Subir archivo; PDF de Tesis]|
-   [<end> end]
+   [<state> Visualizar y analiza; resultados de la tesis] -->  [<end> end]
   ]
   [Aplicacion|
    [<state> Generar nombre;de archivo a partir;fecha y hora]--> [<state> Crear copia de archivo; en carpeta temporal]

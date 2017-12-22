@@ -123,3 +123,5 @@ La siguiente imágen fue creada con la herramienta **draw.io**
 
 La siguiente imágen fue creada mediante código con la herramienta **codetouml** http://londres.ceisufro.cl/codetouml. 
 El diagrama se encuentra incompleto ya que no se logró asociar correctamente el actor Profesor Guía con el caso de uso "Mostrar formulario upload tesis".
+
+.. image:: image/diagrama_caso_uso.png
