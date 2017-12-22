@@ -93,6 +93,7 @@ En el se muestra dos nodos, como capa física y dentro de ellos sus artefactos o
 * Servicio web Analizar PDF
 * Parser (Librería PHP que permite leer un archivo PDF)
 
+La siguiente imágen fue creada con la herramienta **draw.io**
 
 .. image:: image/d_despliegue.png
 
@@ -115,4 +116,10 @@ En el, se modelan tres casos de uso y dos actores del sistema.
 * Subir Archivo PDF.
 * Mostrar resultado análisis tesis pdf.
 
+La siguiente imágen fue creada con la herramienta **draw.io**
+
 .. image:: image/d_casos_uso.png
+
+
+La siguiente imágen fue creada mediante código con la herramienta **codetouml** http://londres.ceisufro.cl/codetouml. 
+El diagrama se encuentra incompleto ya que no se logró asociar correctamente el actor Profesor Guía con el caso de uso "Mostrar formulario upload tesis".
