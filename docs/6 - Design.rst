@@ -30,8 +30,13 @@ Está enfocada en describir la estructura y funcionalidad del sistema, y para é
 * Clase 1: AnalizarPdf
 * Clase 2: Parser
 
+La siguiente imágen fue creada con la herramienta **draw.io**
 
 .. image:: image/d_clases.png
+
+La siguiente imágen fue creada mediante código con la herramienta **codetouml** http://londres.ceisufro.cl/codetouml
+
+.. image:: codetouml/diagrama_clases.png
 
 :Vista de desarrollo:
 ^^^^^^^^^^^^^^^^^^^^^
@@ -45,6 +50,8 @@ El cual contiene dos componentes
 #. Componente 2: Servicio Web Analizar PDF
 
 **Ambos conectados mediante el protocolo HTTP.**
+
+La siguiente imágen fue creada con la herramienta draw.io
 
 .. image:: image/d_componentes.png
 

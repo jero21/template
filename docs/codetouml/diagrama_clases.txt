@@ -1,0 +1,34 @@
+[package AppAnalizarTesis|
+  [ Index
+  |nombreUsuario: String
+  |udEstaAqui: String
+  |urlUpload: String
+  ||desplegarFormUpload()
+ ]
+
+ [ ProcesadorTesisPdf
+ |nombreArchivo: String
+ |rutaArchivo: String
+ |nombreServidor: String
+ |url_ws: String
+ |contenido_tesis_txt: String
+ |numero_caracteres_tesis: number
+ |numero_paginas_tesis: number
+ ||desplegarResultado(String nombreUsuario, String udEstaAqui, String token)
+ ]
+]
+
+[package WS-AnalizarPDF|
+ [ AnalizadorPdf
+  |cantidad_paginas: number
+  |cantidad_caracteres: number
+  |contenido: String
+  |url_pdf: String
+  ||obtener_atributos_pdf(String token): json
+ ] +-->  [ Parser
+  |parseFile(String path): json 
+  |getText(): String
+  |getDetails(): String
+  |desplegarFormUpload()
+ ]
+]
