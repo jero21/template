@@ -18,5 +18,12 @@ Las historias de usuarios seleccionadas para la primera versión de la plataform
 |                      |                           | tesista en las distintas  |
 |                      |                           | iteraciones.              |
 +----------------------+---------------------------+---------------------------+
+| profesor encargado de| poder ver la cantidad de  | inferir el volumen de     | 
+| tesistas             | páginas que tiene el      | trabajo ejecutado a partir|
+|                      | archivo PDF               | de la cantidad de páginas |
+|                      |                           | producidas por el alumno  |
+|                      |                           | tesista en las distintas  |
+|                      |                           | iteraciones.              |
++----------------------+---------------------------+---------------------------+
 
 Dichas Historias de Usuario consisten en subir un archivo para luego visualizar el contenido entregado por un servicio web, esto corresponde a un paso anterior a guardar el contenido en la plataforma, para así poder usar el contenido cuando se desee.

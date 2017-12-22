@@ -44,6 +44,13 @@ A continuación de detallan las Historias de Usuario de un Profesor encargado de
 |                      |                           | tesista en las distintas  |
 |                      |                           | iteraciones.              |
 +----------------------+---------------------------+---------------------------+
+| profesor encargado de| poder ver la cantidad de  | inferir el volumen de     | 
+| tesistas             | páginas que tiene el      | trabajo ejecutado a partir|
+|                      | archivo PDF               | de la cantidad de páginas |
+|                      |                           | producidas por el alumno  |
+|                      |                           | tesista en las distintas  |
+|                      |                           | iteraciones.              |
++----------------------+---------------------------+---------------------------+
 | Alumno tesista       | poder acceder a la        | pueda  ver mi informacion | 
 |                      | plataforma con mi correo  | personal con respecto a mi|
 |                      | institucional y contraseña| tesis.                    |

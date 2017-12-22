@@ -55,7 +55,7 @@ La siguiente imágen fue creada con la herramienta **draw.io**
 
 .. image:: image/d_componentes.png
 
-No fue posible generar este diagrama con **codetouml** ya que la herramienta no provee de los comopnentes y conectores requeridos para ste diagrama.
+No fue posible generar este diagrama con **codetouml** ya que no se encontró en la herramienta los componentes y conectores requerido para esta representación.
 
 *3. Vista de proceso*
 ^^^^^^^^^^^^^^^^^
@@ -99,7 +99,7 @@ La siguiente imágen fue creada con la herramienta **draw.io**
 
 .. image:: image/d_despliegue.png
 
-No fue posible generar este diagrama con **codetouml** ya que la herramienta no provee de los comopnentes y conectores requeridos para ste diagrama.
+No fue posible generar este diagrama con **codetouml** ya que no se encontró en la herramienta los componentes y conectores requerido para esta representación.
 
 *5. Escenarios*
 ^^^^^^^^^^^^
