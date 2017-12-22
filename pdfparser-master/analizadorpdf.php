@@ -1,4 +1,5 @@
 <?php
+//Permite utilizar clase Parser de archivos pdf
 include 'vendor/autoload.php';
 
 class analizadorPdf {
@@ -7,7 +8,7 @@ class analizadorPdf {
   public $method, $request, $token;
 
   public function __construct() {
-	// get the HTTP method, path and body of the request
+	//Obtener solicitud (request) y método
 	$this->method = $_SERVER['REQUEST_METHOD'];
 	$this->request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 	$this->contenido = "";
@@ -69,7 +70,6 @@ class analizadorPdf {
 		
 	}
 	catch (Exception $e) {
-		//echo 'Excepción capturada: ',  $e->getMessage(), "\n";
 		echo 500; //'Internal Server Error'
 		exit;
 	}
@@ -82,6 +82,6 @@ class analizadorPdf {
 }
 
 $atributos = new analizadorPdf();
-echo $atributos->obtener_atributos_pdf("1AEFB345EFA");
+echo $atributos->obtener_atributos_pdf("1AEFB345EFA"); //Para este prototipo, se explicita manualmente token de control de acceso
 
 ?>

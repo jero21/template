@@ -5,12 +5,14 @@ class Index {
   public $nombreUsuario, $udEstaAqui, $url_upload;
 
   public function __construct($nombre,$ruta,$url) {
-    $this->nombreUsuario = $nombre;
-  	$this->udEstaAqui = $ruta;
-  	$this->url_upload = $url;
+    //Inicializa atributos de presentación y url que recibirá el archivo pdf
+	$this->nombreUsuario = $nombre;
+	$this->udEstaAqui = $ruta;
+	$this->url_upload = $url;
   }
 
   function desplegar_form_upload() {
+	//Despliega el formulario para upload de archivo
 	$str = <<<EOD
 <!DOCTYPE HTML>
 <html>
@@ -62,7 +64,7 @@ EOD;
 
 }
 
-$pag_inicio = new Index("Jeremías","Análisis de Documentos PDF","http://localhost/lab/repo_tesis/procesadortesis.php");
+$pag_inicio = new Index("Jeremías","Análisis de Documentos PDF","http://35.192.225.221/lab/repo_tesis/procesadortesis.php");
 $pag_inicio->desplegar_form_upload();
 
 ?>
