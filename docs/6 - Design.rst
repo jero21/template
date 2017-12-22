@@ -51,7 +51,7 @@ El cual contiene dos componentes
 
 **Ambos conectados mediante el protocolo HTTP.**
 
-La siguiente imágen fue creada con la herramienta draw.io
+La siguiente imágen fue creada con la herramienta **draw.io**
 
 .. image:: image/d_componentes.png
 
@@ -68,8 +68,14 @@ En él se detallan tres actores:
 #. App
 #. Servidor Web
 
+La siguiente imágen fue creada con la herramienta **draw.io**
+
 .. image:: image/d_actividad.png
 
+La siguiente imágen fue creada mediante código con la herramienta **codetouml** http://londres.ceisufro.cl/codetouml. 
+El diagrama se encuentra incompleto ya que no se logró asociar correctamente las actividades de los distintos roles.
+
+.. image:: codetouml/diagrama_actividad.png
 
 :Vista fisica:
 ^^^^^^^^^^^^^^
