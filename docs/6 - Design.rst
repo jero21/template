@@ -15,7 +15,7 @@ Las cuatro vistas del modelo son:
 
 **Dichas vistas se mencionan a continuación:**
 
-:Vista lógica:
+*Vista lógica*
 ^^^^^^^^^^^^^^
 
 Está enfocada en describir la estructura y funcionalidad del sistema, y para éste sistema se utilizó un diagrama de Clases para representar esta Vista. El cual está separado en 2 package:
@@ -38,7 +38,7 @@ La siguiente imágen fue creada mediante código con la herramienta **codetouml*
 
 .. image:: codetouml/diagrama_clases.png
 
-:Vista de desarrollo:
+*Vista de desarrollo*
 ^^^^^^^^^^^^^^^^^^^^^
 
 Ilustra el sistema de la perspectiva del programador y está enfocado en la administración de los artefactos de software.
@@ -55,7 +55,7 @@ La siguiente imágen fue creada con la herramienta **draw.io**
 
 .. image:: image/d_componentes.png
 
-:Vista de proceso:
+*Vista de proceso*
 ^^^^^^^^^^^^^^^^^
 
 Explica los procesos de sistema y cómo se comunican. se enfoca en el comportamiento del sistema en tiempo de ejecución
@@ -77,7 +77,7 @@ El diagrama se encuentra incompleto ya que no se logró asociar correctamente la
 
 .. image:: codetouml/diagrama_actividad.png
 
-:Vista fisica:
+*Vista fisica*
 ^^^^^^^^^^^^^^
 
 Describe el sistema desde el punto de vista de un ingeniero de sistemas. Está relacionada con la topología de componentes de software en la capa física (hardware), así como las conexiones físicas entre estos componentes.
@@ -97,7 +97,7 @@ La siguiente imágen fue creada con la herramienta **draw.io**
 
 .. image:: image/d_despliegue.png
 
-:Escenarios:
+*Escenarios*
 ^^^^^^^^^^^^
 
 Los escenarios describen secuencias de interacciones entre objetos, y entre procesos. Se utilizan para identificar y validar el diseño de arquitectura. También sirven como punto de partida para pruebas de un prototipo de arquitectura.
