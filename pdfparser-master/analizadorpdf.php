@@ -2,7 +2,7 @@
 //Permite utilizar clase Parser de archivos pdf
 include 'vendor/autoload.php';
 
-class analizadorPdf {
+class AnalizadorPdf {
 
   public $contenido, $cantidad_paginas, $cantidad_caracteres, $url_pdf;
   public $method, $request, $token;
@@ -81,7 +81,7 @@ class analizadorPdf {
 	}
 }
 
-$atributos = new analizadorPdf();
+$atributos = new AnalizadorPdf();
 echo $atributos->obtener_atributos_pdf("1AEFB345EFA"); //Para este prototipo, se explicita manualmente token de control de acceso
 
 ?>

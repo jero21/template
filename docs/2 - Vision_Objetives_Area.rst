@@ -1,5 +1,5 @@
 ========
-Visión, Objetivos y Área
+Visión, Objetivos y Áreas
 ========
 
 *Vision*
@@ -12,7 +12,7 @@ El proceso de monitoreo del estado de avance de los trabajos de muchos alumnos t
 
 * Implementar un sistema basado en arquitectura SOA capaz de capturar y analizar archivos PDF.
 
-*Areas*
+*Área*
 ^^^^^^^^^^^^
 
 El sistema está orientado a dar soporte a las necesidades de lectura en formato texto plano obtenido desde archivos PDF, para uso por parte de profesores y alumnos en contextos académicos.

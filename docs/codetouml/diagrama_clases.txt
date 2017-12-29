@@ -12,8 +12,9 @@
  |nombreServidor: String
  |url_ws: String
  |contenido_tesis_txt: String
- |numero_caracteres_tesis: number
- |numero_paginas_tesis: number
+ |numero_caracteres_tesis_txt: string
+ |numero_paginas_tesis_txt: string
+ |copia_ok: string
  ||desplegarResultado(String nombreUsuario, String udEstaAqui, String token)
  ]
 ]
@@ -24,6 +25,9 @@
   |cantidad_caracteres: number
   |contenido: String
   |url_pdf: String
+  |token: String
+  |method: String
+  |request: Array
   ||obtener_atributos_pdf(String token): json
  ] +-->  [ Parser
   |parseFile(String path): json 

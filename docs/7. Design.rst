@@ -2,8 +2,8 @@
 Diseño -  Modelo 4+1 - Documento 2 (Software Design Guidelines)
 ===============================================================
 
-:Repositorio para Análisis de Archivos PDF de Tesis Software Design Guidelines:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+:Repositorio para trabajos de Tesis Software Design Guidelines:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Change History**
 
@@ -70,7 +70,6 @@ El proceso puede verse interrumpido por diversos eventos asociados a la naturale
 * 401 'Bad Request'
 * 404 'Not Found'
 * 500 'Internal Server Error'
-
 
 *7. Development Architecture*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -23,7 +23,7 @@ Por ejemplo esta solicitud:
 
 **http://35.192.225.221/lab/pdfparser-master/analizadorpdf.php/mi.dominio.com/lab.repo_tesis.files/capitulo1.pdf/1AEFB345EFA**
 
-...analiza el archivo que se encuentra en: 
+*analiza el archivo que se encuentra en:* 
 
 *http://mi.dominio.com/lab/repo_tesis/files/capitulo1.pdf*
 
