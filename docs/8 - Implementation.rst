@@ -10,11 +10,11 @@ A continuación el resumen de casos de prueba ejecutados:
 | Estado  | Equipo      | Casos de prueba    | Comportamiento            | Iteración 1| Evaluacion    | Iteración 2| Evaluacion    |
 |         | Responsable |                    | esperable                 | (Fecha)    |               | (Fecha)    |               |
 +=========+=============+====================+===========================+============+===============+============+===============+
-|Resuelto |* Claudio    |Subir archivo pdf   |El archivo debe            |20/12/2017  |**Ok:** archivo|21/12/2017  |**Ok:** Opera  |
-|         |* Jeremías   |y comprobar que     |quedar almacenado          |            |visible pero no|            |Correctamente  |
-|         |             |queda almacenado    |en el directorio           |            |incorpora marca|            |               |
-|         |             |para ser accedido   |visible desde              |            |de tiempo.     |            |               |
-|         |             |por el webservice   |internet y se debe         |            |               |            |               |
+|Resuelto |* Claudio    |Subir archivo pdf   |El archivo debe            |20/12/2017  |**NO Ok:**     |21/12/2017  |**Ok:** Opera  |
+|         |* Jeremías   |y comprobar que     |quedar almacenado          |            |archivo visible|            |Correctamente  |
+|         |             |queda almacenado    |en el directorio           |            |pero no        |            |               |
+|         |             |para ser accedido   |visible desde              |            |incorpora marca|            |               |
+|         |             |por el webservice   |internet y se debe         |            |de tiempo      |            |               |
 |         |             |desde internet      |utilizar un nombre         |            |               |            |               |
 |         |             |                    |de archivo que             |            |               |            |               |
 |         |             |                    |incorpore una marca        |            |               |            |               |
@@ -27,7 +27,7 @@ A continuación el resumen de casos de prueba ejecutados:
 |         |             |en métodos y        |                           |            |               |            |               |
 |         |             |parametros.         |                           |            |               |            |               |
 +---------+-------------+--------------------+---------------------------+------------+---------------+------------+---------------+
-|Resuelto |* Claudio    |Comprobar operación |                           |20/12/2017  |**Ok:**        |20/12/2017  |**Ok:** Opera  |
+|Resuelto |* Claudio    |Comprobar operación |                           |20/12/2017  |**No Ok:**     |20/12/2017  |**Ok:** Opera  |
 |         |* Jeremías   |de aplicacioón      |                           |            |aplicacion     |            |Correctamente  |
 |         |             |cuando el Ws se     |                           |            |presenta       |            |               |
 |         |             |encuentra           |                           |            |mensajes de    |            |               |
