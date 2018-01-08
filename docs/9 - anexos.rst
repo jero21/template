@@ -70,9 +70,8 @@ Anexos
 *C. Código Diagrama de Casos de Uso con CodeToUml*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-[<actor> Alumno Tesista]
-[<actor> Profesor Guía] -> [<frame> Sistema de repositorio y versionado ;de tesis]
-[<frame> Sistema de repositorio y versionado ;de tesis
+[<actor> Profesor Guía] -> [<frame> Repositorio para Trabajos de; Tesis]
+[<frame> Repositorio para Trabajos de; Tesis
 |
   [<usecase> Mostrar formulario; upload tesis] <-- <<extend>>  [<usecase> Subir archivo; PDF]
   
