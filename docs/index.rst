@@ -3,8 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Documentación Arquitectónica de Proyecto semestral Arquitectúra de Software - 2do semestre 2017 - Universidad de La Frontera.
-==================================================
+Repositorio para Trabajos de Tesis
+================================
+
+Documentación Arquitectural Proyecto Semestral - Repositorio para trabajos de Tesis, Arquitectura de Software, Magíster en Ingeniería Informática Universidad de La Frontera - 2017
+--------------------------------------------------------------------------------------------------------
+
 
 Contenido:
 
