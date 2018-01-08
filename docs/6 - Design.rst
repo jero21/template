@@ -88,12 +88,16 @@ En el se muestra dos nodos, como capa física y dentro de ellos sus artefactos o
 
 1. Nodo 1: Workstation
 
-* Componente Browser.
+* Componente Web Browser.
 
-2. Nodo 2: Servidor Web
+2. Nodo 2: Web Server App
 
-* Servicio web Analizar PDF
-* Parser (Librería PHP que permite leer un archivo PDF)
+* Componente App Analizar Tesis.
+
+3. Nodo 3: Web Server Web Service
+
+* Componente Servicio web Analizar PDF
+* Componente Parser (Librería PHP que permite leer un archivo PDF)
 
 La siguiente imágen fue creada con la herramienta **draw.io**
 
@@ -107,13 +111,17 @@ No fue posible generar este diagrama con **codetouml** ya que no se encontró en
 Los escenarios describen secuencias de interacciones entre objetos, y entre procesos. Se utilizan para identificar y validar el diseño de arquitectura. También sirven como punto de partida para pruebas de un prototipo de arquitectura.
 La descripción de la arquitectura se ilustra utilizando un conjunto de casos de uso.
 
-En el, se modelan tres casos de uso y dos actores del sistema.
+En él, se modelan tres casos de uso y un actor del sistema.
 
-1. Actores:
+1. Sistema:
+
+* Repositorio para Trabajos de Tesis
+
+2. Actor:
 
 * Profesor Guía
 
-2. Casos de uso:
+3. Casos de uso:
 
 * Mostrar formulario upload tesis.
 * Subir Archivo PDF.
