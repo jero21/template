@@ -12,7 +12,7 @@ Versión 1.0, Versión inicial completa, jmora, cnavarro, Diciembre de 2017.
 *1. Scope*
 ^^^^^^^^^^^^
 
-Este documento muestra los principales elementos que componen la arquitectura del sistema Repositorio para Análisis de Archivos PDF de Tesis. La arquitectura propuesta, es una versión parcial de todo el sistema acotada exclusivamente a los componentes que que abordan las historias de usuario seleccionadas.
+Este documento muestra los principales elementos que componen la arquitectura del sistema Repositorio para Trabajos de Tesis. La arquitectura propuesta, es una versión parcial de todo el sistema acotada exclusivamente a los componentes que que abordan las historias de usuario seleccionadas.
 
 
 *2. References*
