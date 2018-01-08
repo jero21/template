@@ -2,7 +2,7 @@
 Diseño -  Modelo 4+1 - Documento 1 (Software Architecture Document)
 ===============================================================
 
-El método 4+1 nos permitirá describir la arquitectura de sistemas software llamado Repositorio para análisis de Archivos PDF de Tesis, basados en el uso de múltiples vistas concurrentes.
+El método 4+1 nos permitirá describir la arquitectura de sistemas software llamado Repositorio para Trabajos de Tesis, basados en el uso de múltiples vistas concurrentes.
 Estas vistas nos permitirán analizar el problema y describir el sistema desde el punto de vista de distintos interesados, como lo son los usuarios finales (Usuario profesor guía y Usuario estudiante tesista), los desarrolladores y/o jefes de proyecto.
 
 Las cuatro vistas del modelo son:
@@ -86,11 +86,11 @@ Describe el sistema desde el punto de vista de un ingeniero de sistemas. Está r
 
 En el se muestra dos nodos, como capa física y dentro de ellos sus artefactos o componentes de software:
 
-#. Nodo 1: Workstation
+1. Nodo 1: Workstation
 
 * Componente Browser.
 
-#. Nodo 2: Servidor Web
+2. Nodo 2: Servidor Web
 
 * Servicio web Analizar PDF
 * Parser (Librería PHP que permite leer un archivo PDF)
@@ -109,12 +109,11 @@ La descripción de la arquitectura se ilustra utilizando un conjunto de casos de
 
 En el, se modelan tres casos de uso y dos actores del sistema.
 
-#. Actores:
+1. Actores:
 
 * Profesor Guía
-* Alumno tesista
 
-#. Casos de uso:
+2. Casos de uso:
 
 * Mostrar formulario upload tesis.
 * Subir Archivo PDF.
