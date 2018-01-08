@@ -28,9 +28,10 @@ Este documento se encuentra estructurado de acuerdo a las recomendaciones provis
 *3. Software Architecture*
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Para el diseño del sistema se ha definido la utilizar una arquitectura orientada a servicios (SOA). 
+Para el diseño del sistema se ha definido utilizar una arquitectura orientada a servicios (SOA). 
 
 *4. Architectural Goals & Constraints*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 La razón para utilizar SOA se fundamenta en la necesidad de independizar los componentes del sistema, para separar aspectos que pueden variar a velocidades diferentes. Por ejemplo, un proceso relevante que efectúa el sistema es el análisis de archivos pdf, cuyos estándares pueden variar en una línea totalmente independiente del modo como podrían cambiar las necesidades de eventuales cambios en la interfaz de usuario del sistema, por tanto se estima conveniente separar estos aspectos.
 Una desventaja relevante de utilizar SOA está asociada a los tiempos de respuesta dependientes de la velocidad con que logren interoperar los componentes a implementar, se deberá poner atención en los volúmenes de datos a intercambiar en términos de parámetros y resultados en la interacción con los servicios.
